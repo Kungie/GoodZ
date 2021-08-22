@@ -1,0 +1,43 @@
+@use "util" as *;
+@import "global";
+
+footer {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  background-color: #202020;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+p {
+  color: $purple;
+  font-family: $font;
+  font-size: 20px;
+}
+
+.privacy {
+  margin-left: 20px;
+  margin-right: 50px;
+  &:hover {
+    color: $purple;
+  }
+}
+
+.terms-of-service {
+  margin-right: 700px;
+  &:hover {
+    color: $purple;
+  }
+}
+
+.version {
+  margin-left: 50px;
+  color: $purple;
+  &:hover {
+    color: white;
+  }
+}

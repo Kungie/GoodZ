@@ -1,0 +1,122 @@
+@use "util" as *;
+@use "global" as *;
+
+header {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $background;
+  box-shadow: 0px 0px 0px 3px rgba($color: $purple, $alpha: 0.5);
+}
+.logo {
+  height: 75px;
+  width: 200px;
+  padding-left: 30px;
+  @include flexCenter(column);
+}
+
+.line {
+  width: 75px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: $purple;
+}
+
+.logo-word {
+  font-family: $font;
+  font-size: "50px";
+  color: white;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.header-right {
+  @include flexCenter(row);
+  margin-left: 750px;
+  width: 100%;
+  background-color: $background;
+  border-radius: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  height: 50px;
+  margin-right: 0px;
+  position: relative;
+  bottom: 2px;
+}
+
+.home {
+  width: 100px;
+  height: 50px;
+  border: 2px solid $purple;
+  margin-right: 20px;
+  @include flexCenter(column);
+}
+
+.home-text:hover {
+  color: $purple;
+}
+
+.code {
+  width: 100px;
+  height: 50px;
+  border: 2px solid $purple;
+  margin-right: 15px;
+  @include flexCenter(column);
+}
+
+.code-text:hover {
+  color: $purple;
+}
+
+.sign-in {
+  width: 250px;
+  height: 50px;
+  border: 2px solid $purple;
+  @include flexCenter(column);
+}
+
+a {
+  font-family: $font;
+  font-size: 30px;
+  color: white;
+  @include flexCenter(row);
+}
+
+.g {
+  color: #4885ed;
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.g-2 {
+  color: #4885ed;
+  font-size: 30px;
+}
+
+.o-1 {
+  color: #db3236;
+  font-size: 30px;
+}
+
+.o-2 {
+  color: #f4c20d;
+  font-size: 30px;
+}
+
+.l {
+  color: #3cba54;
+  font-size: 30px;
+}
+
+.e {
+  color: #db3236;
+  font-size: 30px;
+}

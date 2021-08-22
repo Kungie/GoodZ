@@ -1,0 +1,19 @@
+@use "util" as *;
+@import "global";
+
+.content {
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  height: 200px;
+  aspect-ratio: 2;
+  border-radius: 10px;
+  background-color: #303030;
+  margin: 20px;
+  @include flexCenter(row);
+}
