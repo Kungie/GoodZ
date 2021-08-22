@@ -17,3 +17,8 @@
   margin: 20px;
   @include flexCenter(column);
 }
+
+.container {
+  position: relative;
+  bottom: 100px;
+}
