@@ -34,6 +34,53 @@ header {
   margin-top: 2px;
 }
 
+.search-box {
+  position: absolute;
+  background: #303030;
+  height: 35px;
+  border-radius: 0px;
+  border: 2px solid $purple;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  top: 9px;
+}
+
+// .search-box:hover > .search-txt {
+//   width: 240px;
+//   padding: 0 6px;
+// }
+
+.search-btn:hover {
+  color: white;
+}
+
+.search-btn {
+  color: $purple;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.5s linear;
+  line-height: 40px;
+  width: 300px;
+}
+
 .header-right {
   @include flexCenter(row);
   margin-left: 750px;
@@ -56,6 +103,7 @@ header {
   width: 100px;
   height: 50px;
   border: 2px solid $purple;
+  border-radius: 0px;
   margin-right: 20px;
   @include flexCenter(column);
 }
@@ -68,7 +116,7 @@ header {
   width: 100px;
   height: 50px;
   border: 2px solid $purple;
-  margin-right: 15px;
+  margin-right: 0px;
   @include flexCenter(column);
 }
 
@@ -80,6 +128,7 @@ header {
   width: 250px;
   height: 50px;
   border: 2px solid $purple;
+  margin-left: 80px;
   @include flexCenter(column);
 }
 
