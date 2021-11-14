@@ -1,4 +1,4 @@
 # GoodZ
 The best place to buy things online.
 
-goodzshop.web.app
+https://goodzshop.web.app
